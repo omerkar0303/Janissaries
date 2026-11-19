@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Local database
+data/*
+!data/.gitkeep
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+
+# Uploaded files
+storage/uploads/*
+!storage/uploads/.gitkeep
+
+# Logs / coverage / OS / editor
+logs/
+*.log
+npm-debug.log*
+coverage/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+CLAUDE.md

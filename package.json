@@ -1,0 +1,32 @@
+{
+  "name": "janissaries-task-board",
+  "version": "1.0.0",
+  "description": "Secure Team Kanban Task Board (Node.js + Express + SQLite)",
+  "private": true,
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node src/db/seed.js",
+    "test": "node --test --test-concurrency=1 tests/"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^13.2.0",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.5",
+    "helmet": "^8.3.0",
+    "multer": "^2.5.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "supertest": "^7.3.2"
+  },
+  "allowScripts": {
+    "better-sqlite3": false
+  }
+}
